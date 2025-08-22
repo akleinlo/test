@@ -8,10 +8,10 @@ public class TagDrei {
         Locale.setDefault(new Locale("en", "EN"));
         System.out.println(Locale.getDefault());
 
+
         String s1 = String.valueOf(true);
         System.out.println(s1);
         System.out.printf("%n");
-
-
+        System.out.println();
     }
 }
