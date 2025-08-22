@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Locale;
 
@@ -117,6 +118,53 @@ public class TagDrei {
         System.out.println(largestNum);
 
         // ----- Level 3: Bonus ----
+        // Double values
+        int[] moreNumbers = {3, 5, 4, 2, 19, 3, 4};
+        for (int i = 0; i < moreNumbers.length; i++) {
+            moreNumbers[i] *= 2;
+            if (i < moreNumbers.length -1) {
+                System.out.print(moreNumbers[i] + ", ");
+            }
+            else {
+                System.out.println(moreNumbers[i]);
+            }
+        }
+
+        // combining two arrays --> all possible combinations
+        String[] vornamen = {"Hans", "Antonia", "Ute", "Dina"};
+        String[] nachnamen = {"Barzegar", "Hanke", "Nouri", "Motebassem"};
+        for (int i = 0; i < vornamen.length; i++) {
+            for (int j = 0; j < vornamen.length; j++) {
+                System.out.println(vornamen[i] + " " + nachnamen[j]);
+            }
+        }
+        System.out.println();
+
+        // combining two arrays --> 1 vorname + 1 nachname
+        for (int i = 0; i < vornamen.length; i++) {
+            System.out.println(vornamen[i] + " " + nachnamen[i]);
+        }
+
+        // process user input
+        Scanner scan = new Scanner(System.in);
+        int[] userInputNumbers = new int[5];
+
+        System.out.println("Gib 5 Ganzzahlen ein: ");
+        for (int i = 0; i < userInputNumbers.length; i++) {
+            System.out.println("Zahl " + (i+1) + ": ");
+            userInputNumbers[i] = scan.nextInt();
+        }
+
+        for (int input:userInputNumbers) {
+            System.out.println(input);
+        }
+
+
+
+
+
+
+
 
 
     }
