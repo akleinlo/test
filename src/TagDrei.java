@@ -159,6 +159,47 @@ public class TagDrei {
             System.out.println(input);
         }
 
+        // Simple grade calculator
+        double[] grades = {85, 70, 95, 60};
+        double sumGrades = 0;
+        for (int i = 0; i < grades.length; i++) {
+            sumGrades += grades[i];
+        }
+        // calculate the average
+        double average = sumGrades/grades.length;
+        System.out.println("The average is: " + average);
+        System.out.println();
+
+        // Sort random numbers
+        // Array with ten random numbers
+        System.out.println("Random numbers: ");
+        int[] randomNums = new int[10];
+        for (int i = 0; i < randomNums.length; i++) {
+            randomNums[i]= (int) (Math.random()*100);
+        }
+
+        System.out.println("Unsorted: " + Arrays.toString(randomNums));
+        // Sort the entire array
+        Arrays.sort(randomNums);
+
+        System.out.println("Sorted: " + Arrays.toString(randomNums));
+
+
+        //double[] doubles = new double[50];
+        /*
+        for (double d = 0.5; d < 25; d += 0.5) {
+            System.out.println(d);
+            //doubles[d] = d;
+        }
+        */
+
+
+
+
+        // Arrays auch so ausgeben
+        double[] doubles = {3.4, 3.2, 123.4, 5.3};
+        System.out.println(java.util.Arrays.toString(doubles));
+
 
 
 
