@@ -183,6 +183,7 @@ public class TagDrei {
         Arrays.sort(randomNums);
 
         System.out.println("Sorted: " + Arrays.toString(randomNums));
+        System.out.println();
 
 
         //double[] doubles = new double[50];
